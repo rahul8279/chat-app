@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+*.log
+
+# Database files
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# JWT secrets or private keys
+*.pem
+*.key
+
+# Build output
+dist/
+build/
+out/
+
+# Sensitive config files
+config/*.json
+config/*.yml
+config/*.yaml
