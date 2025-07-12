@@ -7,8 +7,10 @@ function App() {
 
   return (
    <>
-   <Chat />
-   {/* <Message /> */}
+   <div className='md:flex '>
+<Chat />
+   <Message />
+   </div>
    
    </>
   )
