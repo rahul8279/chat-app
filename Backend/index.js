@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:true,limit:'5mb'}))
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chat-app-1-fdpo.onrender.com",
     credentials: true,
   })
 );
@@ -31,13 +31,6 @@ app.use(express.static(path.join(__dirname,"/frontend/dist")))
 app.get(/(.*)/,(req, res) => {
   res.sendFile(path.resolve(__dirname,"frontend","dist","index.html"));
 })
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
-//   });
-// }
 
 server.listen(PORT, () => {
   console.log("server is running on PORT:" + PORT);

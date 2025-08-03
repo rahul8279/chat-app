@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const axiosInstanace = axios.create({
-    baseURL:"http://localhost:3000/api",
+    baseURL:"https://chat-app-1-fdpo.onrender.com",
     withCredentials:true
 });
 
