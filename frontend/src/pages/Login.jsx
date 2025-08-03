@@ -10,7 +10,16 @@ function Login() {
     email: "",
     password: "",
   });
-  const { login, isLoggingIn } = useAuthStore();
+const handleDemoAccount = ()=> {
+  setFormData(
+    {
+      email:"demo@gmail.com",
+      password:"demopassword"
+    }
+  )
+    
+}
+const { login, isLoggingIn } = useAuthStore();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -84,7 +93,12 @@ function Login() {
                 </button>
               </div>
             </div>
-
+             
+             <button
+              className='btn btn-primary'
+             onClick={handleDemoAccount}>
+               Demo Account
+             </button>
             <button type="submit" className="btn btn-primary w-full" disabled={isLoggingIn}>
               {isLoggingIn ? (
                 <>
