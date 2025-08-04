@@ -2,12 +2,13 @@
 
 
 -------
+## 🔗 Live Demo
 <a href="https://chat-app-2tmo.onrender.com" target="_blank" rel="noopener noreferrer">
-  Live Link
+  Click here to open the Chat App
 </a>
----
 
-  
+
+---  
 ![Macbook-Air-Iphone-13](../chat/frontend/public/s1.png)
 
 
