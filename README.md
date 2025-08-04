@@ -2,7 +2,9 @@
 
 
 -------
-
+## 🔗 Live Demo
+[Click here to open the Chat App]([https://your-deployment-url.com](https://chat-app-2tmo.onrender.com/))
+---
 
   
 ![Macbook-Air-Iphone-13](../chat/frontend/public/s1.png)
