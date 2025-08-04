@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true, limit: "5mb" }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chat-app-2tmo.onrender.com",
     credentials: true,
   })
 );
