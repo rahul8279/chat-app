@@ -15,23 +15,6 @@ import { useAuthStore } from "./store/useAuthStore.js";
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth, onlineUsers,connectSocket,socket } = useAuthStore();
   const { theme } = useThemeStore();
-  useEffect(() => {
-    checkAuth();
-  }, []);
-
-  useEffect(() => {
-    if (authUser && !socket) {
-      connectSocket();
-    }
-  }, [authUser, socket, connectSocket]);
-
-  if (isCheckingAuth && !authUser)
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <Loader className="size-10 animate-spin" />
-      </div>
-    );
-
     
   return (
     <div data-theme={theme}>

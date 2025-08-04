@@ -1,10 +1,9 @@
-import axios from "axios";
 import {create} from "zustand"
-import { axiosInstanace } from "../lib/axios.js";
+import { axiosInstance } from "../lib/axios.js";
 import toast from "react-hot-toast"
 import { io } from "socket.io-client";
 
-const BASE_URL = "https://chat-app-1-fdpo.onrender.com/api"
+const BASE_URL =  "http://localhost:3000";
 export const useAuthStore = create((set,get) => ({
   authUser: null,
   isSigningUp: false,
@@ -16,7 +15,9 @@ export const useAuthStore = create((set,get) => ({
 
   checkAuth : async() => {
    try {
-    const res = await axiosInstanace.get("/auth/check");
+    const res = await axiosInstance.get("/auth/check");
+    console.log(res);
+    
     set({authUser:res.data});
    } catch (error) {
     console.log("Error in checkAuth:",error); 
@@ -29,7 +30,7 @@ export const useAuthStore = create((set,get) => ({
  signup: async (data) => {
     set({ isSigningUp: true });
     try {
-      const res = await axiosInstanace.post("/auth/signup", data);
+      const res = await axiosInstance.post("/auth/signup", data);
       set({ authUser: res.data });
       toast.success("Account created successfully");
       get().connectSocket();
@@ -43,12 +44,14 @@ export const useAuthStore = create((set,get) => ({
   login: async (data) => {
     set({ isLoggingIn: true });
     try {
-      const res = await axiosInstanace.post("/auth/login", data);
+      const res = await axiosInstance.post("/auth/login", data);
       set({ authUser: res.data });
       toast.success("Logged in successfully");
 
       get().connectSocket();
     } catch (error) {
+      console.log(error);
+      
       toast.error(error.response.data.message);
     } finally {
       set({ isLoggingIn: false });
@@ -56,7 +59,7 @@ export const useAuthStore = create((set,get) => ({
   },
    logout: async () => {
     try {
-      await axiosInstanace.post("/auth/logout");
+      await axiosInstance.post("/auth/logout");
       set({ authUser: null });
       toast.success("Logged out successfully");
       get().disconnectSocket();
@@ -68,7 +71,7 @@ export const useAuthStore = create((set,get) => ({
   updateProfile: async (data) => {
     set({ isUpdatingProfile: true });
     try {
-      const res = await axiosInstanace.put("/auth/update-profile", data);
+      const res = await axiosInstance.put("/auth/update-profile", data);
       set({ authUser: res.data });
       toast.success("Profile updated successfully");
     } catch (error) {
