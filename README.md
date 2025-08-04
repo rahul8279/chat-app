@@ -2,8 +2,9 @@
 
 
 -------
-## 🔗 Live Demo
-[Click here to open the Chat App]([https://your-deployment-url.com](https://chat-app-2tmo.onrender.com/))
+<a href="https://chat-app-2tmo.onrender.com" target="_blank" rel="noopener noreferrer">
+  Live Link
+</a>
 ---
 
   
