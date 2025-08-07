@@ -164,7 +164,7 @@ Open `http://localhost:5173` in your web browser.
 
 Rahul Singh \
 Email: rana827965@gmail.com \
-LinkedIn : https://www.linkedin.com/in/akashdeep023/
+LinkedIn : [https://www.linkedin.com/in/](https://www.linkedin.com/in/rahul-singh-025939359)/
 
 
 
