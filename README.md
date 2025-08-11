@@ -47,8 +47,8 @@ Follow these steps to set up and run the project locally:
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/akashdeep023/Chat_App.git
-    cd Chat_App
+    git clone https://github.com/rahul8279/Chat_App.git
+    cd Chat-App
     ```
 
 ---
@@ -72,7 +72,7 @@ Follow these steps to set up and run the project locally:
 
     ```bash
     git clone https://github.com/rahul8279/chat-app.git
-    cd Chat_App
+    cd Chat-App
     ```
 
 2.  **Install Dependencies:**
