@@ -61,11 +61,6 @@ Follow these steps to set up and run the project locally:
 
 ---
 
-![Macbook-Air-Iphone-13](https://github.com/rahul8279/chat-app/blob/main/Screentshot%2025-08-12%111658.png?raw=true)
-
-
----
-
 
 
 ![Macbook-Air-Iphone-13](https://github.com/rahul8279/chat-app/blob/main/Screenshot%202025-08-12%20111811.png?raw=true)
