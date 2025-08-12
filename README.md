@@ -9,7 +9,7 @@
 
 
 ---  
-![Macbook-Air-Iphone-13](../chat/frontend/public/s1.png)
+![Macbook-Air-Iphone-13](https://github.com/rahul8279/chat-app/blob/main/s3.png?raw=true)
 
 
 
